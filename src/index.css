@@ -1,0 +1,26 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Prata, Arial, sans-serif;
+}
+
+/* Set a base font size and family */
+body {
+  /* background-color: #f4f4f4; */
+  color: #333;
+}
+
+
+
+/* Basic styling for headers */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+}
+
+/* Basic styling for paragraphs */
+p {
+  margin-bottom: 20px;
+}
+
