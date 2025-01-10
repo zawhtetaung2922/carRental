@@ -1,18 +1,32 @@
+
 .my-account {
-    margin: 20px auto;
-    max-width: 400px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  gap: 30px;
+  }
+
+  .loginBg{
+    background-image: url("/loginPic/loginImg.svg");
+    height: 400px;
+    width: 50%;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
   }
   
   .auth-container,
   .logged-in-container {
+    /* width: 200px; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 50px;
+    transition: all 5s ease-in-out;
   }
   
   .auth-container h2,
@@ -88,5 +102,17 @@
     color: red;
   }
   
-  
+  @media (max-width: 768px) {
+    .my-account {
+      gap: 20px;
+      flex-direction: column;
+    }
+
+    .loginBg {
+      height: 200px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+  }
   
